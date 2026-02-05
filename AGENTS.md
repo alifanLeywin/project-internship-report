@@ -38,6 +38,10 @@ This is a **React + TypeScript + Vite** web application for an internship manage
 ### Routing
 - **react-router-dom**: `^7.13.0` - For navigation and routing
 
+### Data Fetching & State Management
+- **axios**: `^1.13.4` - HTTP client for making API requests
+- **@tanstack/react-query**: `^5.90.20` - Powerful data fetching and state management library (TanStack Query v5)
+
 ### DevDependencies
 - **ESLint**: `^9.39.1` with TypeScript support
 - **TypeScript ESLint**: `^8.46.4`
