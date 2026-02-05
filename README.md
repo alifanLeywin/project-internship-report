@@ -1,73 +1,87 @@
-# React + TypeScript + Vite
+# Project Internship Report
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📦 Installation
 
-Currently, two official plugins are available:
+Follow these steps to get the project running on your local machine:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Clone the repository
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/alifanLeywin/project-internship-report.git
+cd project-internship-report
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+### 3. Run development server
+
+```bash
+npm run dev
+```
+
+The application will be available at **http://localhost:5173**
+
+
+A modern web application for internship management system built with React 19, TypeScript, Vite, and Tailwind CSS v4.
+
+## 🚀 Tech Stack
+
+- **React** 19.2.0
+- **TypeScript** 5.9.3
+- **Vite** 7.2.5 (Rolldown)
+- **Tailwind CSS** 4.1.18
+- **React Router** 7.13.0
+- **Lucide React** - Icon library
+- **React Icons** - Additional icons
+
+## 📁 Project Structure
+
+```
+/src
+  /assets          # Static assets
+  /component       # Shared/reusable components
+  /pages
+    /Authentication # Authentication pages (Login, Register)
+    /Admin         # Admin dashboard pages
+    /Teacher       # Teacher-specific pages
+    /Student       # Student-specific pages
+    /Company       # Company portal pages
+    /Superadmin    # Superadmin pages
+  App.tsx          # Main app component
+  index.css        # Global styles with Tailwind
+  main.tsx         # App entry point
+```
+
+## 🎨 Features
+
+- ✅ Modern authentication UI
+- ✅ Role-based access (Student, Teacher, Company, Admin, Superadmin)
+- ✅ Dark theme design
+- ✅ Responsive layout
+- ✅ TypeScript for type safety
+- ✅ Tailwind CSS v4 for styling
+
+## 🔧 Development Notes
+
+- This project uses **Tailwind CSS v4**, which has different syntax from v3
+- Read `AGENTS.md` for detailed coding guidelines and project specifications
+- Uses React 19 modern patterns (no `React.FC`)
+
+## 📚 Documentation
+
+- [Tailwind CSS v4](https://tailwindcss.com/docs)
+- [React 19](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [React Router v7](https://reactrouter.com/)
+
+## 👨‍💻 Author
+
+Alifan Leywin
+
+## 📄 License
+
+This project is for educational purposes.
